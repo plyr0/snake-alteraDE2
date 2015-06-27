@@ -1,0 +1,40 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=P:/snake/ --output-directory=P:/snake/clk_25_2/ --report-file=bsf:P:/snake/clock_25_2.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=P:/snake/clock_25_2.qsys
+Progress: Loading snake/clock_25_2.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 13.0]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: clock_25_2.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: clock_25_2.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: clock_25_2.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: clock_25_2.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=P:/snake/ --output-directory=P:/snake/clk_25_2/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:P:/snake/clock_25_2.sopcinfo --report-file=html:P:/snake/clock_25_2.html --report-file=qip:P:/snake/clk_25_2/synthesis/clock_25_2.qip --report-file=cmp:P:/snake/clock_25_2.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=P:/snake/clock_25_2.qsys --language=VERILOG
+Progress: Loading snake/clock_25_2.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 13.0]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: clock_25_2.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: clock_25_2.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: clock_25_2.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: clock_25_2.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: clock_25_2: Generating clock_25_2 "clock_25_2" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 1 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: No Avalon connections, skipping transform 
+Info: merlin_translator_transform: After transform: 1 modules, 0 connections
+Info: altpll_0: "clock_25_2" instantiated altpll "altpll_0"
+Info: clock_25_2: Done clock_25_2" with 2 modules, 2 files, 11292 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

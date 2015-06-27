@@ -1,0 +1,15 @@
+set_global_assignment -entity "clock_25_2" -library "clock_25_2" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "clock_25_2" -library "clock_25_2" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "clock_25_2" -library "clock_25_2" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "clock_25_2" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../clock_25_2.sopcinfo"]
+set_instance_assignment -entity "clock_25_2" -library "clock_25_2" -name SLD_INFO "QSYS_NAME clock_25_2 HAS_SOPCINFO 1 GENERATION_ID 1434623201"
+set_global_assignment -library "clock_25_2" -name MISC_FILE [file join $::quartus(qip_path) "../../clock_25_2.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "clock_25_2" -name MISC_FILE [file join $::quartus(qip_path) "../../clock_25_2.qsys"]
+
+set_global_assignment -library "clock_25_2" -name VERILOG_FILE [file join $::quartus(qip_path) "clock_25_2.v"]
+set_global_assignment -library "clock_25_2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/clock_25_2_altpll_0.v"]
+
+set_global_assignment -entity "clock_25_2_altpll_0" -library "clock_25_2" -name IP_TOOL_NAME "altpll"
+set_global_assignment -entity "clock_25_2_altpll_0" -library "clock_25_2" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "clock_25_2_altpll_0" -library "clock_25_2" -name IP_TOOL_ENV "Qsys"
